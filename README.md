@@ -50,6 +50,10 @@ About compression, it is disabled by default.
 You can turn it on by setting ENABLE_COMPRESSION to "true" in the environement variable list in `cronjob.sample.yaml`.
 Talos backup will compress the etcd snapshot with zstd algorithm before encrypt it.
 
+### Retention
+
+The easiest way to set retention is to set the lifecycle policy on the storage bucket itself.
+
 ## Development
 
 You may build the binary with:
